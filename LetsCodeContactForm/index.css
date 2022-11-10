@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 320px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+  background: linear-gradient(-45deg, #f15959, #d447c9, #2370d5, #23d573, #d2d523);
+  color: #fff;
+  background-size: 500% 500%;
+  animation: bganimation 10s linear infinite;
+}
+
+#pagebody {
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+label {
+  font-size: 25px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  resize: vertical;
+}
+
+#info {
+  font-size: 20px;
+  font-weight: 650;
+  color: rgb(0, 0, 0);
+}
+
+input[type="submit"] {
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.2s transform;
+}
+
+input[type="submit"]:hover {
+  background: rgb(255, 61, 61);
+  transform: translateY(-5px);
+}
+
+@keyframes bganimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
